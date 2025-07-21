@@ -2,7 +2,7 @@
   description = "Patched version of Caddy";
 
   # Nixpkgs / NixOS version to use.
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
   outputs =
     { self, nixpkgs }:
@@ -44,7 +44,7 @@
             inherit version;
             src = ./caddy-src;
             runVend = true;
-            vendorHash = "sha256-c9A0LabGN8gIq2pL/WP8wst3y0+8f72K015QZrX9yq4=";
+            vendorHash = "sha256-gFNo9vMlzgC/SFcFcdtWzzVROBPsRlCJswcD3gWNkSw";
             # vendorHash = pkgs.lib.fakeHash;
 
             meta = {
